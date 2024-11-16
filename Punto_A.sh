@@ -34,7 +34,7 @@ sudo swapon /dev/mapper/vg_temp-lv_swap
 
 #Realizar montaje persistente
 echo "/dev/mapper/vg_datos-lv_docker /var/lib/docker ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/mapper/vg_datos-lv_workareas /home/EnzoGalvan/work ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/mapper/vg_datos-lv_workareas /work/ ext4 defaults 0 0" | sudo tee -a /etc/fstab
 echo "/dev/mapper/vg_temp-lv_swap swap swap  defaults 0 0" | sudo tee -a /etc/fstab
 mount -a
 
