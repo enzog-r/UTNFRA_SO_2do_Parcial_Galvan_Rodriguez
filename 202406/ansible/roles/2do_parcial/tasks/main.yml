@@ -1,18 +1,4 @@
-#Crear carpeta templates en /roles/2do_parcial
-mkdir templates
-
-
-#Crear archivo datos_alumno.j2
- Nombre: {{ alumno_nombre }}
- Apellido: {{ alumno_apellido }}
- División: {{ alumno_division }}
-
-#Crear archivo datos_equipo.j2:
- Nombre Distribucion: {{ ansible_facts.distribution }}
- IP: {{ ansible_default_ipv4.address }}
- Todas las IP: {{ ansible_facts.all_ipv4_addresses }}
-
-#Completar el archivo main.yml en /tasks
+---
 # tasks file for 2do_parcial
 
 - debug:
@@ -55,8 +41,3 @@ mkdir templates
     state: present
     line: '%2PSupervisores ALL=(ALL) NOPASSWD: ALL'
     validate: 'visudo -cf %s'
-
-
-
-#Ejecutar ansible
-sudo ansible-playbook -i inventory/hosts playbook.yml

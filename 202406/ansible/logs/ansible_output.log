@@ -1,0 +1,228 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 15:47:36,129 p=3310 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 15:47:37,114 p=3310 u=EnzoGalvan n=ansible | PLAY [all] ************************************************************************************************************************************************************
+2024-11-18 15:47:37,175 p=3310 u=EnzoGalvan n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************
+2024-11-18 15:47:37,222 p=3310 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 15:47:38,675 p=3310 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 15:47:38,686 p=3310 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] *************************************************************************************************************************************
+2024-11-18 15:47:38,713 p=3310 u=EnzoGalvan n=ansible | TASK [2do_parcial : debug] ********************************************************************************************************************************************
+2024-11-18 15:47:38,728 p=3310 u=EnzoGalvan n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 15:47:38,737 p=3310 u=EnzoGalvan n=ansible | TASK [Otra tarea] *****************************************************************************************************************************************************
+2024-11-18 15:47:38,751 p=3310 u=EnzoGalvan n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 15:47:38,768 p=3310 u=EnzoGalvan n=ansible | PLAY RECAP ************************************************************************************************************************************************************
+2024-11-18 15:47:38,768 p=3310 u=EnzoGalvan n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 15:47:38,768 p=3310 u=EnzoGalvan n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:18:56,578 p=4157 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:18:56,710 p=4157 u=EnzoGalvan n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:18:56,717 p=4157 u=EnzoGalvan n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:18:56,740 p=4157 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:18:57,677 p=4157 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 17:18:57,688 p=4157 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:18:57,705 p=4157 u=EnzoGalvan n=ansible | ERROR! conflicting action statements: file, with items
+
+The error appears to be in '/home/EnzoGalvan/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Crear directorios en /tmp/"
+  ^ here
+
+2024-11-18 17:31:29,948 p=4305 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:31:30,085 p=4305 u=EnzoGalvan n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:31:30,091 p=4305 u=EnzoGalvan n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:31:30,114 p=4305 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:31:31,089 p=4305 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 17:31:31,099 p=4305 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:31:31,117 p=4305 u=EnzoGalvan n=ansible | ERROR! conflicting action statements: file, with items
+
+The error appears to be in '/home/EnzoGalvan/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Crear directorios en /tmp/"
+  ^ here
+
+2024-11-18 17:34:25,612 p=4452 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:34:25,742 p=4452 u=EnzoGalvan n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:34:25,748 p=4452 u=EnzoGalvan n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:34:25,772 p=4452 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:34:26,699 p=4452 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 17:34:26,711 p=4452 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:34:26,778 p=4452 u=EnzoGalvan n=ansible | ERROR! couldn't resolve module/action 'linefile'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/EnzoGalvan/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 31, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Agrego NOPASSW en sudoers para el grupo 2PSupervisores"
+  ^ here
+
+2024-11-18 17:36:30,359 p=4584 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:36:30,495 p=4584 u=EnzoGalvan n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:36:30,502 p=4584 u=EnzoGalvan n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:36:30,524 p=4584 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:36:31,446 p=4584 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 17:36:31,458 p=4584 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:36:31,480 p=4584 u=EnzoGalvan n=ansible | ERROR! couldn't resolve module/action 'lineifile'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/EnzoGalvan/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 31, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Agrego NOPASSW en sudoers para el grupo 2PSupervisores"
+  ^ here
+
+2024-11-18 17:40:52,114 p=4712 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:40:52,245 p=4712 u=EnzoGalvan n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:40:52,251 p=4712 u=EnzoGalvan n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:40:52,275 p=4712 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:40:53,196 p=4712 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 17:40:53,207 p=4712 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:40:53,229 p=4712 u=EnzoGalvan n=ansible | ERROR! couldn't resolve module/action 'lineifile'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/EnzoGalvan/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 31, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Agrego NOPASSW en sudoers para el grupo 2PSupervisores"
+  ^ here
+
+2024-11-18 17:41:52,819 p=4819 u=EnzoGalvan n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:41:52,955 p=4819 u=EnzoGalvan n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:41:52,963 p=4819 u=EnzoGalvan n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:41:52,988 p=4819 u=EnzoGalvan n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:41:53,969 p=4819 u=EnzoGalvan n=ansible | ok: [localhost]
+2024-11-18 17:41:53,981 p=4819 u=EnzoGalvan n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:41:54,004 p=4819 u=EnzoGalvan n=ansible | TASK [2do_parcial : debug] **********************************************************************************************************
+2024-11-18 17:41:54,021 p=4819 u=EnzoGalvan n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 17:41:54,026 p=4819 u=EnzoGalvan n=ansible | TASK [2do_parcial : Crear directorios en /tmp/] *************************************************************************************
+2024-11-18 17:41:54,340 p=4819 u=EnzoGalvan n=ansible | changed: [localhost] => (item=alumno)
+2024-11-18 17:41:54,528 p=4819 u=EnzoGalvan n=ansible | changed: [localhost] => (item=equipo)
+2024-11-18 17:41:54,534 p=4819 u=EnzoGalvan n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] *********************************************************************************
+2024-11-18 17:41:55,115 p=4819 u=EnzoGalvan n=ansible | changed: [localhost]
+2024-11-18 17:41:55,120 p=4819 u=EnzoGalvan n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] *********************************************************************************
+2024-11-18 17:41:55,475 p=4819 u=EnzoGalvan n=ansible | changed: [localhost]
+2024-11-18 17:41:55,480 p=4819 u=EnzoGalvan n=ansible | TASK [2do_parcial : Agrego NOPASSW en sudoers para el grupo 2PSupervisores] *********************************************************
+2024-11-18 17:41:55,615 p=4819 u=EnzoGalvan n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-18 17:41:55,616 p=4819 u=EnzoGalvan n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-11-18 17:41:55,616 p=4819 u=EnzoGalvan n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:41:55,616 p=4819 u=EnzoGalvan n=ansible | localhost                  : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:44:05,358 p=5075 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:44:05,493 p=5075 u=root n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:44:05,499 p=5075 u=root n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:44:05,539 p=5075 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:44:06,572 p=5075 u=root n=ansible | ok: [localhost]
+2024-11-18 17:44:06,583 p=5075 u=root n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:44:06,611 p=5075 u=root n=ansible | TASK [2do_parcial : debug] **********************************************************************************************************
+2024-11-18 17:44:06,629 p=5075 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 17:44:06,633 p=5075 u=root n=ansible | TASK [2do_parcial : Crear directorios en /tmp/] *************************************************************************************
+2024-11-18 17:44:06,915 p=5075 u=root n=ansible | changed: [localhost] => (item=alumno)
+2024-11-18 17:44:07,113 p=5075 u=root n=ansible | changed: [localhost] => (item=equipo)
+2024-11-18 17:44:07,120 p=5075 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] *********************************************************************************
+2024-11-18 17:44:07,651 p=5075 u=root n=ansible | ok: [localhost]
+2024-11-18 17:44:07,656 p=5075 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] *********************************************************************************
+2024-11-18 17:44:08,032 p=5075 u=root n=ansible | ok: [localhost]
+2024-11-18 17:44:08,036 p=5075 u=root n=ansible | TASK [2do_parcial : Agrego NOPASSW en sudoers para el grupo 2PSupervisores] *********************************************************
+2024-11-18 17:44:08,301 p=5075 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Destination /etc/sudoers.d/2PSupervisores does not exist !", "rc": 257}
+2024-11-18 17:44:08,303 p=5075 u=root n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-11-18 17:44:08,303 p=5075 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:44:08,303 p=5075 u=root n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:45:36,445 p=5346 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:45:36,578 p=5346 u=root n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:45:36,584 p=5346 u=root n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:45:36,606 p=5346 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:45:37,625 p=5346 u=root n=ansible | ok: [localhost]
+2024-11-18 17:45:37,636 p=5346 u=root n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:45:37,661 p=5346 u=root n=ansible | TASK [2do_parcial : debug] **********************************************************************************************************
+2024-11-18 17:45:37,673 p=5346 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 17:45:37,678 p=5346 u=root n=ansible | TASK [2do_parcial : Crear directorios en /tmp/] *************************************************************************************
+2024-11-18 17:45:37,972 p=5346 u=root n=ansible | ok: [localhost] => (item=alumno)
+2024-11-18 17:45:38,157 p=5346 u=root n=ansible | ok: [localhost] => (item=equipo)
+2024-11-18 17:45:38,165 p=5346 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] *********************************************************************************
+2024-11-18 17:45:38,608 p=5346 u=root n=ansible | ok: [localhost]
+2024-11-18 17:45:38,613 p=5346 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] *********************************************************************************
+2024-11-18 17:45:38,990 p=5346 u=root n=ansible | ok: [localhost]
+2024-11-18 17:45:38,995 p=5346 u=root n=ansible | TASK [2do_parcial : Crear archivo vacío para 2PSupervisores] ************************************************************************
+2024-11-18 17:45:39,186 p=5346 u=root n=ansible | changed: [localhost]
+2024-11-18 17:45:39,192 p=5346 u=root n=ansible | TASK [2do_parcial : Agrego NOPASSW en sudoers para el grupo 2PSupervisores] *********************************************************
+2024-11-18 17:45:39,499 p=5346 u=root n=ansible | changed: [localhost]
+2024-11-18 17:45:39,507 p=5346 u=root n=ansible | TASK [Otra tarea] *******************************************************************************************************************
+2024-11-18 17:45:39,518 p=5346 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 17:45:39,533 p=5346 u=root n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-11-18 17:45:39,533 p=5346 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:45:39,533 p=5346 u=root n=ansible | localhost                  : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:47:50,106 p=5680 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 17:47:50,240 p=5680 u=root n=ansible | PLAY [all] **************************************************************************************************************************
+2024-11-18 17:47:50,246 p=5680 u=root n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-11-18 17:47:50,269 p=5680 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 22: Connection refused", "unreachable": true}
+2024-11-18 17:47:51,306 p=5680 u=root n=ansible | ok: [localhost]
+2024-11-18 17:47:51,317 p=5680 u=root n=ansible | TASK [include_role : 2do_parcial] ***************************************************************************************************
+2024-11-18 17:47:51,342 p=5680 u=root n=ansible | TASK [2do_parcial : debug] **********************************************************************************************************
+2024-11-18 17:47:51,354 p=5680 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 17:47:51,359 p=5680 u=root n=ansible | TASK [2do_parcial : Crear directorios en /tmp/] *************************************************************************************
+2024-11-18 17:47:51,627 p=5680 u=root n=ansible | ok: [localhost] => (item=alumno)
+2024-11-18 17:47:51,813 p=5680 u=root n=ansible | ok: [localhost] => (item=equipo)
+2024-11-18 17:47:51,819 p=5680 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_alumno.txt] *********************************************************************************
+2024-11-18 17:47:52,315 p=5680 u=root n=ansible | changed: [localhost]
+2024-11-18 17:47:52,320 p=5680 u=root n=ansible | TASK [2do_parcial : Crear archivo datos_equipo.txt] *********************************************************************************
+2024-11-18 17:47:52,679 p=5680 u=root n=ansible | ok: [localhost]
+2024-11-18 17:47:52,684 p=5680 u=root n=ansible | TASK [2do_parcial : Crear archivo vacío para 2PSupervisores] ************************************************************************
+2024-11-18 17:47:52,894 p=5680 u=root n=ansible | changed: [localhost]
+2024-11-18 17:47:52,901 p=5680 u=root n=ansible | TASK [2do_parcial : Agrego NOPASSW en sudoers para el grupo 2PSupervisores] *********************************************************
+2024-11-18 17:47:53,179 p=5680 u=root n=ansible | ok: [localhost]
+2024-11-18 17:47:53,187 p=5680 u=root n=ansible | TASK [Otra tarea] *******************************************************************************************************************
+2024-11-18 17:47:53,198 p=5680 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 17:47:53,214 p=5680 u=root n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-11-18 17:47:53,214 p=5680 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 17:47:53,215 p=5680 u=root n=ansible | localhost                  : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
